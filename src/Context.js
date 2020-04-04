@@ -7,19 +7,21 @@ function ContextProvider(props) {
   const [finalResult, setFinalResult] = useState(0);
 
   function plusPartialNumber(lastNumberOfPartial) {
-    const partailNumberToSubtract = parseInt(
+    const partialNumberToSubtract = parseInt(
       "" + partialNumber + lastNumberOfPartial
     );
     setPartialNumber("");
-    setFinalResult(() => finalResult + partailNumberToSubtract);
+    if (!isNaN(partialNumberToSubtract))
+      setFinalResult(() => finalResult + partialNumberToSubtract);
   }
 
   function subtractPartialNumber(lastNumberOfPartial) {
-    const partailNumberToSubtract = parseInt(
+    const partialNumberToSubtract = parseInt(
       "" + partialNumber + lastNumberOfPartial
     );
     setPartialNumber("");
-    setFinalResult(() => finalResult - partailNumberToSubtract);
+    if (!isNaN(partialNumberToSubtract))
+      setFinalResult(() => finalResult - partialNumberToSubtract);
   }
 
   function addNumberToParcial(newNumber) {
