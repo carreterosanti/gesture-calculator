@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/gesture-calculator/precache-manifest.f783dff65e10876c7f5c047ce5e1528f.js"
+  "/gesture-calculator/precache-manifest.93583c9683dc9396f9b6bef87f4c0b4a.js"
 );
 
 self.addEventListener('message', (event) => {
