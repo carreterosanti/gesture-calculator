@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/gesture-calculator/static/css/main.c759a67c.chunk.css",
-    "main.js": "/gesture-calculator/static/js/main.9e440c6d.chunk.js",
-    "main.js.map": "/gesture-calculator/static/js/main.9e440c6d.chunk.js.map",
+    "main.js": "/gesture-calculator/static/js/main.cbfd70f4.chunk.js",
+    "main.js.map": "/gesture-calculator/static/js/main.cbfd70f4.chunk.js.map",
     "runtime-main.js": "/gesture-calculator/static/js/runtime-main.1adaea52.js",
     "runtime-main.js.map": "/gesture-calculator/static/js/runtime-main.1adaea52.js.map",
-    "static/js/2.9d809aa6.chunk.js": "/gesture-calculator/static/js/2.9d809aa6.chunk.js",
-    "static/js/2.9d809aa6.chunk.js.map": "/gesture-calculator/static/js/2.9d809aa6.chunk.js.map",
+    "static/js/2.f56a00ea.chunk.js": "/gesture-calculator/static/js/2.f56a00ea.chunk.js",
+    "static/js/2.f56a00ea.chunk.js.map": "/gesture-calculator/static/js/2.f56a00ea.chunk.js.map",
     "index.html": "/gesture-calculator/index.html",
-    "precache-manifest.93583c9683dc9396f9b6bef87f4c0b4a.js": "/gesture-calculator/precache-manifest.93583c9683dc9396f9b6bef87f4c0b4a.js",
+    "precache-manifest.7531c751c9282a72bc6a7fcf18056f76.js": "/gesture-calculator/precache-manifest.7531c751c9282a72bc6a7fcf18056f76.js",
     "service-worker.js": "/gesture-calculator/service-worker.js",
     "static/css/main.c759a67c.chunk.css.map": "/gesture-calculator/static/css/main.c759a67c.chunk.css.map",
-    "static/js/2.9d809aa6.chunk.js.LICENSE.txt": "/gesture-calculator/static/js/2.9d809aa6.chunk.js.LICENSE.txt"
+    "static/js/2.f56a00ea.chunk.js.LICENSE.txt": "/gesture-calculator/static/js/2.f56a00ea.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1adaea52.js",
-    "static/js/2.9d809aa6.chunk.js",
+    "static/js/2.f56a00ea.chunk.js",
     "static/css/main.c759a67c.chunk.css",
-    "static/js/main.9e440c6d.chunk.js"
+    "static/js/main.cbfd70f4.chunk.js"
   ]
 }
