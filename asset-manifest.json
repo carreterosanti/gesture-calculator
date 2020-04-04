@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/gesture-calculator/static/css/main.c759a67c.chunk.css",
+    "main.js": "/gesture-calculator/static/js/main.12bb1bcc.chunk.js",
+    "main.js.map": "/gesture-calculator/static/js/main.12bb1bcc.chunk.js.map",
+    "runtime-main.js": "/gesture-calculator/static/js/runtime-main.1adaea52.js",
+    "runtime-main.js.map": "/gesture-calculator/static/js/runtime-main.1adaea52.js.map",
+    "static/js/2.420af07c.chunk.js": "/gesture-calculator/static/js/2.420af07c.chunk.js",
+    "static/js/2.420af07c.chunk.js.map": "/gesture-calculator/static/js/2.420af07c.chunk.js.map",
+    "index.html": "/gesture-calculator/index.html",
+    "precache-manifest.f783dff65e10876c7f5c047ce5e1528f.js": "/gesture-calculator/precache-manifest.f783dff65e10876c7f5c047ce5e1528f.js",
+    "service-worker.js": "/gesture-calculator/service-worker.js",
+    "static/css/main.c759a67c.chunk.css.map": "/gesture-calculator/static/css/main.c759a67c.chunk.css.map",
+    "static/js/2.420af07c.chunk.js.LICENSE.txt": "/gesture-calculator/static/js/2.420af07c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1adaea52.js",
+    "static/js/2.420af07c.chunk.js",
+    "static/css/main.c759a67c.chunk.css",
+    "static/js/main.12bb1bcc.chunk.js"
+  ]
+}
