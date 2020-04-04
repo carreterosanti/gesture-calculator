@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { ContextCalculator } from "../Context";
 import GestureDiv from "./GestureDiv";
 
@@ -10,14 +10,16 @@ export default function KeyboardDeleteKey(props) {
   } = useContext(ContextCalculator);
 
   return (
-    <GestureDiv
-      click={deleteLastPartialNumber}
-      dragLeft={deleteAllPartialNumber}
-      dragUp={resetFinalResult}
-    >
-      <div className={"keyboard-key regular-size-key display-column-center"}>
-        <div>{props.valueKey}</div>
-      </div>
-    </GestureDiv>
+    <div className={"keyboard-key regular-size-key display-column-center"}>
+      <GestureDiv
+        click={deleteLastPartialNumber}
+        dragLeft={deleteAllPartialNumber}
+        dragUp={resetFinalResult}
+      >
+        <div className="center-key">
+          <h3>{props.valueKey}</h3>
+        </div>
+      </GestureDiv>
+    </div>
   );
 }

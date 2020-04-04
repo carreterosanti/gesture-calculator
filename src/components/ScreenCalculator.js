@@ -21,15 +21,17 @@ export default function ScreenCalculator() {
         dragUp={() => plusPartialNumber()}
         dragDown={() => subtractPartialNumber()}
       >
-        <h3
-          style={{
-            padding: "20px",
-            backgroundColor: "#84a9ac",
-            color: "white",
-          }}
-        >
-          {partialNumber}
-        </h3>
+        <div className="center-key">
+          <h3
+            style={{
+              padding: "20px",
+              backgroundColor: "#84a9ac",
+              color: "white",
+            }}
+          >
+            {partialNumber}
+          </h3>
+        </div>
       </GestureDiv>
     </div>
   );

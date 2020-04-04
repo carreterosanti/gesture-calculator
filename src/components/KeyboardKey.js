@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { ContextCalculator } from "../Context";
 import GestureDiv from "./GestureDiv";
 
@@ -11,20 +11,22 @@ export default function KeyboadKey(props) {
   const valueKey = props.valueKey;
 
   return (
-    <GestureDiv
-      click={() => addNumberToParcial(valueKey)}
-      dragUp={() => plusPartialNumber(valueKey)}
-      dragDown={() => subtractPartialNumber(valueKey)}
+    <div
+      className={
+        props.tallKey
+          ? "keyboard-key tall-size-key display-column-center"
+          : "keyboard-key regular-size-key display-column-center"
+      }
     >
-      <div
-        className={
-          props.tallKey
-            ? "keyboard-key tall-size-key display-column-center"
-            : "keyboard-key regular-size-key display-column-center"
-        }
+      <GestureDiv
+        click={() => addNumberToParcial(valueKey)}
+        dragUp={() => plusPartialNumber(valueKey)}
+        dragDown={() => subtractPartialNumber(valueKey)}
       >
-        <div>{props.valueKey}</div>
-      </div>
-    </GestureDiv>
+        <div className="center-key">
+          <h3>{props.valueKey}</h3>
+        </div>
+      </GestureDiv>
+    </div>
   );
 }

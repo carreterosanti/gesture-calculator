@@ -36,12 +36,12 @@ export default function GestureDiv(props) {
   };
 
   const handleTouchStart = (event) => {
-    const [touch, secondElement] = event.changedTouches;
+    const [touch] = event.changedTouches;
     setStartPositionDragX(touch.screenX);
     setStartPositionDragY(touch.screenY);
   };
   const handleTouchEnd = (event) => {
-    const [touch, secondElement] = event.changedTouches;
+    const [touch] = event.changedTouches;
     const endPositionDragY = touch.screenY;
     const endPositionDragX = touch.screenX;
     handleGesture(endPositionDragX, endPositionDragY);
@@ -49,6 +49,7 @@ export default function GestureDiv(props) {
 
   return (
     <div
+      style={{ height: "100%", width: "100%" }}
       draggable
       onDragStart={handleDragStart}
       onDragEnd={handleDragEnd}
