@@ -1,8 +1,14 @@
 import React, { useContext } from "react";
 import { ContextCalculator } from "../Context";
+import GestureDiv from "./GestureDiv";
 
 export default function ScreenCalculator() {
-  const { partialNumber, finalResult } = useContext(ContextCalculator);
+  const {
+    partialNumber,
+    finalResult,
+    plusPartialNumber,
+    subtractPartialNumber,
+  } = useContext(ContextCalculator);
 
   return (
     <div className="display-column-center">
@@ -11,11 +17,20 @@ export default function ScreenCalculator() {
       >
         {finalResult}
       </h1>
-      <h3
-        style={{ padding: "20px", backgroundColor: "#84a9ac", color: "white" }}
+      <GestureDiv
+        dragUp={() => plusPartialNumber()}
+        dragDown={() => subtractPartialNumber()}
       >
-        {partialNumber}
-      </h3>
+        <h3
+          style={{
+            padding: "20px",
+            backgroundColor: "#84a9ac",
+            color: "white",
+          }}
+        >
+          {partialNumber}
+        </h3>
+      </GestureDiv>
     </div>
   );
 }

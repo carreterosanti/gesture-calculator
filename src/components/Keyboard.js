@@ -1,5 +1,6 @@
 import React from "react";
 import KeyboadKey from "./KeyboardKey";
+import KeyboardDeleteKey from "./KeyboardDeleteKey";
 
 export default function Keyboard() {
   return (
@@ -28,7 +29,7 @@ export default function Keyboard() {
       </div>
 
       <div className="items-column-keyboard">
-        <KeyboadKey valueKey="<" />
+        <KeyboardDeleteKey valueKey="<" />
         <KeyboadKey valueKey="0" tallKey={true} />
       </div>
     </div>

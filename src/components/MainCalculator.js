@@ -11,6 +11,7 @@ export default function MainCalculator() {
         style={{
           minWidth: "100vw",
           minHeight: "100vh",
+          justifyContent: "space-between",
         }}
       >
         <ScreenCalculator />

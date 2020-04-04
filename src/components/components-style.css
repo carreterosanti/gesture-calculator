@@ -1,5 +1,7 @@
+html,
 body {
   background-color: #cae8d5;
+  overflow: hidden;
 }
 
 .keyboard-key {

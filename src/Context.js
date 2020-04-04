@@ -3,14 +3,14 @@ import React, { useState } from "react";
 const ContextCalculator = React.createContext();
 
 function ContextProvider(props) {
-  const [partialNumber, setParcialNumber] = useState("");
+  const [partialNumber, setPartialNumber] = useState("");
   const [finalResult, setFinalResult] = useState(0);
 
   function plusPartialNumber(lastNumberOfPartial) {
     const partailNumberToSubtract = parseInt(
       "" + partialNumber + lastNumberOfPartial
     );
-    setParcialNumber("");
+    setPartialNumber("");
     setFinalResult(() => finalResult + partailNumberToSubtract);
   }
 
@@ -18,14 +18,28 @@ function ContextProvider(props) {
     const partailNumberToSubtract = parseInt(
       "" + partialNumber + lastNumberOfPartial
     );
-    setParcialNumber("");
+    setPartialNumber("");
     setFinalResult(() => finalResult - partailNumberToSubtract);
   }
 
   function addNumberToParcial(newNumber) {
-    setParcialNumber((prevParcialNumber) => {
-      return "" + prevParcialNumber + newNumber;
+    setPartialNumber((prevPartialNumber) => {
+      return "" + prevPartialNumber + newNumber;
     });
+  }
+
+  function deleteLastPartialNumber() {
+    setPartialNumber((prevPartialNumber) => {
+      return prevPartialNumber.substring(0, prevPartialNumber.length - 1);
+    });
+  }
+
+  function deleteAllPartialNumber() {
+    setPartialNumber("");
+  }
+
+  function resetFinalResult() {
+    setFinalResult(0);
   }
 
   return (
@@ -36,6 +50,9 @@ function ContextProvider(props) {
         finalResult,
         subtractPartialNumber,
         plusPartialNumber,
+        deleteLastPartialNumber,
+        deleteAllPartialNumber,
+        resetFinalResult,
       }}
     >
       {props.children}
