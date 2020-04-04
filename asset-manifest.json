@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/gesture-calculator/static/css/main.c759a67c.chunk.css",
+    "main.css": "/gesture-calculator/static/css/main.eb59105c.chunk.css",
     "main.js": "/gesture-calculator/static/js/main.3d356272.chunk.js",
     "main.js.map": "/gesture-calculator/static/js/main.3d356272.chunk.js.map",
     "runtime-main.js": "/gesture-calculator/static/js/runtime-main.1adaea52.js",
@@ -8,15 +8,15 @@
     "static/js/2.f56a00ea.chunk.js": "/gesture-calculator/static/js/2.f56a00ea.chunk.js",
     "static/js/2.f56a00ea.chunk.js.map": "/gesture-calculator/static/js/2.f56a00ea.chunk.js.map",
     "index.html": "/gesture-calculator/index.html",
-    "precache-manifest.dc92d5cc19aeb1c8f5fa99258a14ffdb.js": "/gesture-calculator/precache-manifest.dc92d5cc19aeb1c8f5fa99258a14ffdb.js",
+    "precache-manifest.14eba8e9f15ee28702526eeca682f550.js": "/gesture-calculator/precache-manifest.14eba8e9f15ee28702526eeca682f550.js",
     "service-worker.js": "/gesture-calculator/service-worker.js",
-    "static/css/main.c759a67c.chunk.css.map": "/gesture-calculator/static/css/main.c759a67c.chunk.css.map",
+    "static/css/main.eb59105c.chunk.css.map": "/gesture-calculator/static/css/main.eb59105c.chunk.css.map",
     "static/js/2.f56a00ea.chunk.js.LICENSE.txt": "/gesture-calculator/static/js/2.f56a00ea.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1adaea52.js",
     "static/js/2.f56a00ea.chunk.js",
-    "static/css/main.c759a67c.chunk.css",
+    "static/css/main.eb59105c.chunk.css",
     "static/js/main.3d356272.chunk.js"
   ]
 }
