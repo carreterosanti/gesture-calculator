@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6db354ebd0fb39fdf6ba244903910da8",
+    "revision": "a65c4fa56e7ed75e594b59098b8babb8",
     "url": "/gesture-calculator/index.html"
   },
   {
