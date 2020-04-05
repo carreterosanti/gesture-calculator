@@ -1,7 +1,7 @@
 import React from "react";
 import ScreenCalculator from "./ScreenCalculator";
 import Keyboard from "./Keyboard";
-import { ContextProvider } from "../Context";
+import { ContextProvider } from "../Contexts/Context";
 
 export default function MainCalculator() {
   return (

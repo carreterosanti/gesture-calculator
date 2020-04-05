@@ -5,12 +5,17 @@ const ContextCalculator = React.createContext();
 function ContextProvider(props) {
   const [partialNumber, setPartialNumber] = useState("");
   const [finalResult, setFinalResult] = useState(0);
+  const [lockPartialNumber, setLockPartialNumber] = useState(false);
+
+  function changeLockPartialNumber() {
+    setLockPartialNumber((prevLock) => !prevLock);
+  }
 
   function plusPartialNumber(lastNumberOfPartial) {
     const partialNumberToSubtract = parseInt(
       "" + partialNumber + lastNumberOfPartial
     );
-    setPartialNumber("");
+    if (!lockPartialNumber) setPartialNumber("");
     if (!isNaN(partialNumberToSubtract))
       setFinalResult(() => finalResult + partialNumberToSubtract);
   }
@@ -19,7 +24,7 @@ function ContextProvider(props) {
     const partialNumberToSubtract = parseInt(
       "" + partialNumber + lastNumberOfPartial
     );
-    setPartialNumber("");
+    if (!lockPartialNumber) setPartialNumber("");
     if (!isNaN(partialNumberToSubtract))
       setFinalResult(() => finalResult - partialNumberToSubtract);
   }
@@ -55,6 +60,8 @@ function ContextProvider(props) {
         deleteLastPartialNumber,
         deleteAllPartialNumber,
         resetFinalResult,
+        lockPartialNumber,
+        changeLockPartialNumber,
       }}
     >
       {props.children}
