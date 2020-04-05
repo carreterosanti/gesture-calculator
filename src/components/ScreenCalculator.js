@@ -16,20 +16,24 @@ export default function ScreenCalculator() {
   const colorLockPartialNumber = lock ? "#ed6663" : "#84a9ac";
   console.log(colorLockPartialNumber);
   return (
-    <div
-      className="display-column-center"
-      style={{ maxWidth: "80vw", margin: "auto" }}
-    >
-      <h1
-        style={{
-          padding: "40px",
-          backgroundColor: "#3b6978",
-          color: "white",
-          maxWidth: "100%",
-        }}
-      >
-        {finalResult}
-      </h1>
+    <div className="display-column-center" style={{ margin: "auto" }}>
+      <div className="center-key" style={{ maxWidth: "90vw", margin: "25px" }}>
+        <div
+          style={{
+            padding: "30px",
+            backgroundColor: "#3b6978",
+            color: "white",
+            maxWidth: "100%",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            fontWeight: "600",
+            fontSize: "xx-large",
+          }}
+        >
+          {finalResult}
+        </div>
+      </div>
+
       <GestureDiv
         dragUp={() => plusPartialNumber()}
         dragDown={() => subtractPartialNumber()}
@@ -39,17 +43,23 @@ export default function ScreenCalculator() {
           className="center-key"
           style={{ maxWidth: "60vw", margin: "auto" }}
         >
-          <h3
+          <div
             style={{
-              padding: "20px",
+              padding: "15px",
               backgroundColor: colorLockPartialNumber,
               color: "white",
               maxWidth: "100%",
               overflow: "hidden",
+              textOverflow: "ellipsis",
+              minWidth: "30px",
+              minHeight: "30px",
+              fontSize: "x-large",
+              fontWeight: "500",
+              textAlign: "center",
             }}
           >
             {partialNumber}
-          </h3>
+          </div>
         </div>
       </GestureDiv>
     </div>
