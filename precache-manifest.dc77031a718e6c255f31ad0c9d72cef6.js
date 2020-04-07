@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6824678c5cb6420a46ff5579fdb865e3",
+    "revision": "ed36d64fc1fef0c6cede9c8a8a1d2e19",
     "url": "/gesture-calculator/index.html"
   },
   {
-    "revision": "631d1a773042f5145ee7",
+    "revision": "298076ac0d5b8079dab2",
     "url": "/gesture-calculator/static/css/main.8ae6c473.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gesture-calculator/static/js/2.c047bfa3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "631d1a773042f5145ee7",
-    "url": "/gesture-calculator/static/js/main.aef9761f.chunk.js"
+    "revision": "298076ac0d5b8079dab2",
+    "url": "/gesture-calculator/static/js/main.d9b6d34b.chunk.js"
   },
   {
     "revision": "99a53c3488f0405cd716",
