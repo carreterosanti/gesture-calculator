@@ -20,6 +20,8 @@ export default function MainCalculator() {
           minHeight: "-webkit-fill-available",
           height: "-webkit-fill-available",
           justifyContent: "space-between",
+          overflowX: "hidden",
+          overflowY: "hidden",
         }}
       >
         <ScreenCalculator />
