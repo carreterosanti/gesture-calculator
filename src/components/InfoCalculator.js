@@ -5,7 +5,7 @@ import TopRightLinkIcon from "./TopRightLinkIcon";
 
 export default function InfoCalculator() {
   return (
-    <div>
+    <div className="display-column-center">
       <TopRightLinkIcon
         to="/gesture-calculator"
         imgUrl="./images/exit-icon.png"

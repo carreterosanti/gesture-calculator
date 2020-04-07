@@ -74,6 +74,7 @@ p {
   justify-content: center;
   align-items: flex-start;
   padding: 15px;
+  max-width: 600px;
 }
 
 .final-result {
