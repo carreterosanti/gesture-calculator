@@ -18,20 +18,7 @@ export default function ScreenCalculator() {
   return (
     <div className="display-column-center" style={{ margin: "auto" }}>
       <div className="center-key" style={{ maxWidth: "90vw", margin: "25px" }}>
-        <div
-          style={{
-            padding: "30px",
-            backgroundColor: "#3b6978",
-            color: "white",
-            maxWidth: "100%",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            fontWeight: "600",
-            fontSize: "xx-large",
-          }}
-        >
-          {finalResult}
-        </div>
+        <div className="final-result">{finalResult}</div>
       </div>
 
       <GestureDiv
@@ -44,19 +31,8 @@ export default function ScreenCalculator() {
           style={{ maxWidth: "60vw", margin: "auto" }}
         >
           <div
-            style={{
-              padding: "15px",
-              backgroundColor: colorLockPartialNumber,
-              color: "white",
-              maxWidth: "100%",
-              overflow: "hidden",
-              textOverflow: "ellipsis",
-              minWidth: "30px",
-              minHeight: "30px",
-              fontSize: "x-large",
-              fontWeight: "500",
-              textAlign: "center",
-            }}
+            className="partial-result"
+            style={{ backgroundColor: colorLockPartialNumber }}
           >
             {partialNumber}
           </div>

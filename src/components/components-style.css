@@ -1,17 +1,24 @@
 html,
 body {
   background-color: #cae8d5;
-  overflow: hidden;
   margin: 0;
   padding: 0;
-
   min-width: 100%;
   width: 100%;
   max-width: 100%;
-
   min-height: 100%;
   height: 100%;
   max-height: 100%;
+}
+
+h1,
+h2 {
+  color: #204051;
+}
+
+p {
+  color: #132731;
+  margin-top: 0px;
 }
 
 .keyboard-key {
@@ -51,4 +58,69 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.right-top-icon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25px;
+  margin: 15px;
+}
+
+.main-div-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.final-result {
+  padding: 30px;
+  background-color: #3b6978;
+  color: white;
+  max-width: 100%;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+.partial-result {
+  padding: 15px;
+  color: white;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 30px;
+  min-height: 30px;
+  font-size: x-large;
+  font-weight: 500;
+  text-align: center;
+  background-color: #84a9ac;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+.info-sections-div {
+  margin: 10px;
+  border-color: #204051;
+  border-style: dotted;
+  padding: 10px 15px;
+  align-self: center;
+}
+
+.info-final-result {
+  font-size: large;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.info-partial-result {
+  font-size: large;
+  margin-bottom: 10px;
+  padding: 10px;
 }
