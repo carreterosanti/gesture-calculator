@@ -5,7 +5,8 @@ Link: https://carreterosanti.github.io/gesture-calculator/
 Calculadora que permite sumar y restar, controlando dichas operaciones mediante "Drag and Drop" (Cursor) o "Swipe" (Táctil) directamente sobre los números del teclado.
 
 ## Implementación
-El desarrollo del proyecto se realizó mediante **React.js**, partiendo desde la estructura inicial que provee la herramienta “Create React App”. Se puede destacar la implementación de un **Context** para almacenar los valores correspondientes del  “Resultado Final” y “Dígitos Parciales”. Por último cabe mencionar que se utilizó en la implementación **React Router Dom** para el acceso a la vista de “introducción a la calculadora”.
+El desarrollo del proyecto se realizó mediante **React.js**, partiendo desde la estructura inicial que provee la herramienta “Create React App”. 
+Se puede destacar la implementación de un **Context** para almacenar los valores correspondientes del  “Resultado Final” y “Dígitos Parciales”. Por último cabe mencionar que se utilizó en la implementación **React Router Dom** para el acceso a la vista de “introducción a la calculadora”.
 
 ## Introducción a la Calculadora
 Comenzamos por identificar las tres secciones que componen de la calculadora: Resultado Final, Dígitos Parciales y Teclado
