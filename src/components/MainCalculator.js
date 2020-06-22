@@ -8,10 +8,7 @@ import TopRightLinkIcon from "./TopRightLinkIcon";
 export default function MainCalculator() {
   return (
     <ContextProvider>
-      <TopRightLinkIcon
-        to="/gesture-calculator/info"
-        imgUrl="./images/info-icon.png"
-      />
+      <TopRightLinkIcon to="/info" imgUrl="./images/info-icon.png" />
 
       <div
         className="display-column-center"

@@ -6,10 +6,7 @@ import TopRightLinkIcon from "./TopRightLinkIcon";
 export default function InfoCalculator() {
   return (
     <div className="display-column-center">
-      <TopRightLinkIcon
-        to="/gesture-calculator"
-        imgUrl="./images/exit-icon.png"
-      />
+      <TopRightLinkIcon to="/" imgUrl="./images/exit-icon.png" />
       <div className="main-div-info">
         <h1>Introducción a la Calculadora</h1>
         <p>
