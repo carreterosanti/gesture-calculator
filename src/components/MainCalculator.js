@@ -14,6 +14,7 @@ export default function MainCalculator() {
         className="display-column-center"
         style={{
           minWidth: "100vw",
+          height: "100vh",
           minHeight: "-webkit-fill-available",
           height: "-webkit-fill-available",
           justifyContent: "space-between",
